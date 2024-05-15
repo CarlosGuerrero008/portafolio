@@ -1,5 +1,5 @@
 {
-    "welcomeMessage": "Hello! I am Carlos, a software engineer. This is my portfolio where you will find information about me, my skills, and some projects I have worked on.",
+    "welcomeMessage": "HELLO! I am Carlos, a software engineer. This is my portfolio where you will find information about me, my skills, and some projects I have worked on.",
     "moreAboutMe": "More about me",
     "newContent": "New Content",
     "newContentDescription": "new content",
@@ -7,6 +7,10 @@
     "home": "Home",
     "moreAboutme": "More About me",
     "Skills": "Skills",
-    "Projects": "Projects"
+    "Projects": "Projects",
+    "hello": "HELLO!",
+    "Python": "Python",
+    "Message": "Among my skills is, knowledge of python, HTML as well to master databases like MySQL.",
+    "project": "Go to my projects"
   }
   

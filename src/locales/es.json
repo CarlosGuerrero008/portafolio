@@ -1,5 +1,5 @@
 {
-    "welcomeMessage": "¡Hola! Soy Carlos, ingeniero de software. Este es mi portafolio donde encontrarás información sobre mí, mis habilidades, además algunos proyectos en los que he trabajado.",
+    "welcomeMessage": "¡HOLA! Soy Carlos, ingeniero de software. Este es mi portafolio donde encontrarás información sobre mí, mis habilidades, además algunos proyectos en los que he trabajado.",
     "moreAboutMe": "Más sobre mí",
     "newContent": "Nuevo Contenido",
     "newContentDescription": "nuevo contenido .",
@@ -7,6 +7,10 @@
     "home": "Inicio",
     "moreAboutme": "Mas sobre mi",
     "Skills": "habilidades",
-    "Projects": "Proyectos"
+    "Projects": "Proyectos",
+    "hello": "¡HOLA!",
+    "Python": "Python",
+    "Message": "Entre mis habilidades se encuentra, conocimiento en python, HTML ademas de dominar bases de datos como MySQL.",
+    "project": "Ir a mis proyectos"
   }
   

@@ -2,12 +2,12 @@ import React from 'react';
 
 const NewContentSection = ({ t, bxlPython, bxlhtml, bxlMysql, filetypeJava, filetypePy, filetypeSql, ArrowRight }) => {
   return (
-    <div className="py-8 md:py-24 bg-gray-900 flex-1">
+    <div className="py-8 md:py-8 bg-gray-900 flex-1">
       {/* Iconos y botones */}
-      <div className="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start space-y-8 md:space-y-0 md:space-x-8">
+      <div className="flex flex-col md:flex-row justify-between items-center md:justify-between md:items-start space-y-5 md:space-y-0 md:space-x-5">
         {/* Sección Python */}
         <div className="flex flex-col items-center">
-          <button className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-32 rounded-lg flex items-center">
+          <button className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-16 rounded-lg flex items-center">
             {t('Python')}
             <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-8 h-8 md:w-12 h-12" />
           </button>
@@ -18,7 +18,7 @@ const NewContentSection = ({ t, bxlPython, bxlhtml, bxlMysql, filetypeJava, file
         
         {/* Sección HTML */}
         <div className="flex flex-col items-center">
-          <button className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-32 rounded-lg flex items-center">
+          <button className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-16 rounded-lg flex items-center">
             {t('HTML')}
             <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-8 h-8 md:w-12 h-12" />
           </button>
@@ -29,7 +29,7 @@ const NewContentSection = ({ t, bxlPython, bxlhtml, bxlMysql, filetypeJava, file
 
         {/* Sección MYSQL */}
         <div className="flex flex-col items-center">
-          <button className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-32 rounded-lg flex items-center">
+          <button className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-16 rounded-lg flex items-center">
             {t('MYSQL')}
             <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-8 h-8 md:w-12 h-12" />
           </button>

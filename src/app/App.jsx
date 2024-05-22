@@ -46,7 +46,7 @@ function App() {
           {/* Asegúrate de definir los componentes AboutComponent, SkillsComponent, ProjectsComponent y ContactComponent */}
           <Route path="/about" element={<AboutComponent  t={t} piano={piano} libros={libros} yo={yo} />} />
           <Route path="/skills" element={<SkillsComponent />} />
-          <Route path="/projects" element={<ProjectsComponent  />} />
+          <Route path="/projects" element={<ProjectsComponent t={t} filetypeJava={filetypeJava} filetypePy={filetypePy} filetypeSql={filetypeSql} />} />
           <Route path="/contact" element={<ContactComponent />} />
         </Routes>
         <Footer t={t} phoneIcon={phoneIcon} emailIcon={emailIcon} />

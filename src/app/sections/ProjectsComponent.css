@@ -1,0 +1,61 @@
+.projects-container {
+  /* Estilo específico para ProjectsComponent */
+  background-color: #030712;
+  color: #fff;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.projects-container .section {
+  /* Estilo para cada sección de proyecto dentro de ProjectsComponent */
+  margin-bottom: 40px; /* Aumenta el margen inferior para más espacio entre secciones */
+  text-align: center;
+}
+
+.projects-container .section-content {
+  /* Estilo para el contenido de cada sección dentro de ProjectsComponent */
+  display: flex;
+  flex-direction: row; /* Ahora todas las secciones tienen la dirección de fila */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-container .project-details {
+  /* Estilo para el contenedor de detalles del proyecto en ProjectsComponent */
+  margin-left: 50px;
+  flex: 1; /* Esto permite que el texto ocupe todo el espacio disponible */
+}
+
+.projects-container .project-image {
+  /* Estilo para la imagen de cada proyecto en ProjectsComponent */
+  width: 900px; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Ajusta la altura según sea necesario */
+  border-radius: 5px; /* Redondea las esquinas de la imagen */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-large {
+  /* Estilo para el texto de cada proyecto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-top: 10px;
+}
+
+.text-large h3 {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  height: 3px; /* Aumenta el grosor de la línea */
+  
+  margin: 60px 0; /* Aumenta el margen superior e inferior */
+}
+
+.section {
+  padding: 20px 0; /* Añade relleno alrededor de cada sección para más espacio */
+  
+  border-radius: 8px; /* Añade un borde redondeado a cada sección */
+}
+
+  
+  

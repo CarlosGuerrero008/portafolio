@@ -34,6 +34,8 @@ function App() {
     document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
   };
 
+  
+
   const root = createRoot(document.getElementById('root')); // Crea el punto de entrada raíz con createRoot
 
   root.render(

@@ -11,16 +11,15 @@ const AboutComponent = ({ t = { t }, piano = { piano }, libros = { libros }, yo 
         <div className="section">
         <h2></h2>
         <div className="section-content">
-          <div className="text text-large">
+          <div className="text text-large ">
 
             <p>
-            Daré una breve bibliografía de quien soy: Nací en Colombia, Pasto Nariño, el 21 de octubre del 2002.
-                Estudié en la normal superior donde me gradué. Desde niño soy un friki por las computadoras.
+            {t('Biografia')}
             </p>
           </div>
-          <img src={yo} alt="Piano" className="piano-pic" />
+          <img src={yo} alt="Piano" className="profile-pic" />
         </div>
-        <div className="text text-large">
+        <div className="text ">
               <p>
                 Tengo muchos gustos y pasatiempos, pero los más importantes, además de los que más me describen,
                 son para mí leer y tocar el piano.
@@ -34,7 +33,7 @@ const AboutComponent = ({ t = { t }, piano = { piano }, libros = { libros }, yo 
         <h2></h2>
         <div className="section-content">
           <img src={libros} alt="Estante de libros" className="bookshelf-pic" />
-          <div className="text text-large">
+          <div className="text ">
           <h2>Sobre Leer</h2>
             <p>
               Me gusta leer desde bien joven. Leo mucho sobre filosofía y ciencia ficción. Mis autores favoritos son
@@ -46,7 +45,7 @@ const AboutComponent = ({ t = { t }, piano = { piano }, libros = { libros }, yo 
       <div className="section">
         <h2></h2>
         <div className="section-content">
-          <div className="text text-large">
+          <div className="text ">
           <h2>Sobre el piano</h2>
             <p>
               Toco el piano, se me da bien, me han dado muchas clases durante mi vida, mi canción preferida para tocar es

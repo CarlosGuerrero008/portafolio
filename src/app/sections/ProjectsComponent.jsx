@@ -21,8 +21,11 @@ const ProjectsComponent = ({t={t}, filetypeJava={filetypeJava}, filetypePy={file
             <p>
               En este proyecto tengo un código hecho en C# que añade un día al calendario teniendo en cuenta años bisiestos y el mes de febrero.
             </p>
+          <div className="text ">
             <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
           </div>
+          </div>
+          
         </div>
       </div>
 
@@ -44,7 +47,9 @@ const ProjectsComponent = ({t={t}, filetypeJava={filetypeJava}, filetypePy={file
             <p>
               En este proyecto tengo creada una máquina con Docker Compose, que permite orquestar y gestionar varios contenedores.
             </p>
-            <a href="#">Ir al proyecto 2</a>
+            <div className="text ">
+            <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+          </div>
           </div>
         </div>
       </div>
@@ -67,7 +72,9 @@ const ProjectsComponent = ({t={t}, filetypeJava={filetypeJava}, filetypePy={file
             <p>
               En este proyecto tengo un código hecho en Python sobre una calculadora que suma, resta, multiplica, divide, es muy básico.
             </p>
-            <a href="#">Ir al proyecto 3</a>
+            <div className="text ">
+            <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+          </div>
           </div>
         </div>
       </div>

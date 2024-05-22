@@ -80,10 +80,10 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
 
         {/* Botón de proyecto */}
         <div className="flex justify-center mt-12 md:mt-16">
-          <button className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-32 rounded-lg flex items-center">
+          <Link to="/projects" className="bg-gray-500 hover:bg-gray-500 text-black text-3xl font-bold py-6 px-16 md:py-8 md:px-32 rounded-lg flex items-center">
             {t('project')}
-            <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-8 h-8 md:w-12 h-12" />
-          </button>
+          <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-8 h-8 md:w-12 h-12" />
+          </Link>
         </div>
       </div>
     </div>

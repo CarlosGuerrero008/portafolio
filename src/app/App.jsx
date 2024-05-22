@@ -16,7 +16,6 @@ import Footer from './sections/Footer';
 import AboutComponent from './sections/AboutComponent';
 import SkillsComponent from './sections/SkillsComponent';
 import ProjectsComponent from './sections/ProjectsComponent';
-import ContactComponent from './sections/ContactComponent';
 import phoneIcon from '../assets/iconos/bxl-discord-alt.svg';
 import emailIcon from '../assets/iconos/bxl-whatsapp.svg';
 import libros from '../assets/img/libros.jpg';
@@ -30,12 +29,17 @@ function App() {
     i18n.changeLanguage(language);
   };
 
+  const scrollToFooter = () => {
+    // Suponiendo que tienes un elemento con id "footer"
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+  };
+
   const root = createRoot(document.getElementById('root')); // Crea el punto de entrada raíz con createRoot
 
   root.render(
     <Router>
       <div className="flex flex-col min-h-screen font-inter">
-        <Navbar changeLanguage={changeLanguage} t={t} />
+        <Navbar changeLanguage={changeLanguage} t={t} scrollToFooter={scrollToFooter} />
         <Routes>
           <Route path="/" element={<MainContent t={t} profileImage={profileImage} ArrowRight={ArrowRight} bxlPython={bxlPython} 
           bxlhtml={bxlhtml} 
@@ -47,7 +51,6 @@ function App() {
           <Route path="/about" element={<AboutComponent  t={t} piano={piano} libros={libros} yo={yo} />} />
           <Route path="/skills" element={<SkillsComponent />} />
           <Route path="/projects" element={<ProjectsComponent t={t} filetypeJava={filetypeJava} filetypePy={filetypePy} filetypeSql={filetypeSql} />} />
-          <Route path="/contact" element={<ContactComponent />} />
         </Routes>
         <Footer t={t} phoneIcon={phoneIcon} emailIcon={emailIcon} />
       </div>

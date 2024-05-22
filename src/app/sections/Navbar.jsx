@@ -1,7 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const Navbar = ({ changeLanguage, t }) => {
+const Navbar = ({ changeLanguage, t, scrollToFooter={scrollToFooter} }) => {
+  const location = useLocation();
+
+  const handleContactClick = (event) => {
+    if (location.pathname === '/') {
+      event.preventDefault();
+      scrollToFooter();
+    }
+  };
+
   return (
     <nav className="bg-gray-100 p-4">
       <div className="flex justify-between items-center border-b border-gray-300">
@@ -49,7 +58,7 @@ const Navbar = ({ changeLanguage, t }) => {
               <Link to="/projects" className="text-xl text-black hover:text-gray-700">{t('Projects')}</Link>
             </li>
             <li>
-              <Link to="/contact" className="text-xl text-black hover:text-gray-700">{t('contact')}</Link>
+              <a href="#footer" onClick={handleContactClick} className="text-xl text-black hover:text-gray-700">{t('contact')}</a>
             </li>
           </ul>
         </div>

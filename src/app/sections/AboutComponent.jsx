@@ -12,6 +12,7 @@ const AboutComponent = ({ t = { t }, piano = { piano }, libros = { libros }, yo 
         <h2></h2>
         <div className="section-content">
           <div className="text text-large">
+
             <p>
             Daré una breve bibliografía de quien soy: Nací en Colombia, Pasto Nariño, el 21 de octubre del 2002.
                 Estudié en la normal superior donde me gradué. Desde niño soy un friki por las computadoras.

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = ({ t, phoneIcon, emailIcon }) => {
   return (
-    <footer className="bg-gray-700 p-16 text-center text-white">
+    <footer id="footer" className="bg-gray-700 p-16 text-center text-white">
       <div className="flex justify-center space-x-16">
         <div className="flex items-center space-x-4">
           <img src={phoneIcon} alt="Whatsapp" className="w-48 h-48" />

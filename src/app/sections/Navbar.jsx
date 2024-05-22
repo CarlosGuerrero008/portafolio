@@ -1,19 +1,19 @@
-// Navbar.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Navbar = ({ changeLanguage }) => {
+const Navbar = ({ changeLanguage, t }) => {
   return (
-    <nav className="bg-gray-700 p-4">
-      <div className="flex justify-between items-center">
-        <div className="flex-1 flex items-center">
+    <nav className="bg-gray-100 p-4">
+      <div className="flex justify-between items-center border-b border-gray-300">
+        <div className="flex items-center">
           <div className="flex mr-4">
-            <button onClick={() => changeLanguage('en')} className="m-2 p-2 bg-gray-950 text-white">English</button>
-            <button onClick={() => changeLanguage('es')} className="m-2 p-2 bg-gray-950 text-white">Español</button>
+            <button onClick={() => changeLanguage('en')} className="m-2 p-2 bg-gray-700 text-white">English</button>
+            <button onClick={() => changeLanguage('es')} className="m-2 p-2 bg-gray-700 text-white">Español</button>
           </div>
           <input
             type="text"
             placeholder="Buscar..."
-            className="p-2 1-lg border-none w-full bg-gray-100"
+            className="p-2 lg border-none w-full bg-gray-200"
           />
         </div>
         <button className="block sm:hidden">
@@ -32,6 +32,27 @@ const Navbar = ({ changeLanguage }) => {
             />
           </svg>
         </button>
+      </div>
+      <div className="flex justify-end"> {/* Utilizando justify-end para alinear a la derecha */}
+        <div className="p-4">
+          <ul className="flex">
+            <li className="mr-8">
+              <Link to="/" className="text-xl text-black hover:text-gray-700">{t('home')}</Link>
+            </li>
+            <li className="mr-8">
+              <Link to="/about" className="text-xl text-black hover:text-gray-700">{t('moreAboutMe')}</Link>
+            </li>
+            <li className="mr-8">
+              <Link to="/skills" className="text-xl text-black hover:text-gray-700">{t('Skills')}</Link>
+            </li>
+            <li className="mr-8">
+              <Link to="/projects" className="text-xl text-black hover:text-gray-700">{t('Projects')}</Link>
+            </li>
+            <li>
+              <Link to="/contact" className="text-xl text-black hover:text-gray-700">{t('contact')}</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

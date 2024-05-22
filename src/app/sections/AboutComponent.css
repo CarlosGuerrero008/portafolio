@@ -1,0 +1,38 @@
+.about-container {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section {
+    margin-bottom: 10px;
+    text-align: center; /* Centra el contenido horizontalmente */
+  }
+  
+  .section-content {
+    display: flex;
+    flex-direction: row-reverse; /* Cambiado de row a row-reverse */
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text {
+    text-align: center; /* Añadido para centrar el texto */
+    font-size: 50px; /* Ajustado el tamaño del texto */
+  }
+  
+  h2 {
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+  
+  .profile-pic,
+  .bookshelf-pic,
+  .piano-pic {
+    width: 800px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  

@@ -55,8 +55,8 @@ function App() {
           <Route path="/about" element={<AboutComponent  t={t} piano={piano} libros={libros} yo={yo} />} />
           <Route path="/skills" element={<SkillsComponent t={t} bxlPython={bxlPython} />} />
           <Route path="/projects" element={<ProjectsComponent t={t} filetypeJava={filetypeJava} filetypePy={filetypePy} filetypeSql={filetypeSql} />} />
-          <Route path="/skillstwo" element={<SkillstwoComponent t={t} bxlPython={bxlPython} />} />
-          <Route path="/skillstheer" element={<SkillstheerComponent t={t} bxlPython={bxlPython} />} />
+          <Route path="/skillstwo" element={<SkillstwoComponent t={t} bxlhtml={bxlhtml}  />} />
+          <Route path="/skillstheer" element={<SkillstheerComponent t={t} bxlMysql={bxlMysql} />} />
           
         </Routes>
         <Footer t={t} phoneIcon={phoneIcon} emailIcon={emailIcon} />

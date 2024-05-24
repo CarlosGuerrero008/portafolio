@@ -18,7 +18,10 @@
     "read": "About Read",
     "About Read": "I like to read from a very young age. I read a lot about philosophy and science fiction. My favorite authors are Albert Camus and Lovecraft. Also, my favorite book is  The Rebel",
     "piano": "On the piano",
-    "On the piano": "I play the piano, I'm good at it, I've had many lessons during my life, my favorite song to play is Chopin Nocturne Op. 9 No. 2."
+    "On the piano": "I play the piano, I'm good at it, I've had many lessons during my life, my favorite song to play is Chopin Nocturne Op. 9 No. 2.",
+    "infoPython": "I have used Python in various projects, which has given me a solid familiarity with this language. This experience has been fundamental for my development, allowing me to create efficient and effective solutions in my projects. I would love to share more details about my work with Python in my portfolio.",
+    "infoSQL": "I have worked extensively with MySQL on various projects, which has given me a deep understanding of relational databases. From schema design to complex queries, I have used MySQL to efficiently manage large data sets. I'm excited to share concrete examples of how I've implemented MySQL in my projects in my portfolio",
+    "infoHTML": "I have used HTML in several projects, which has allowed me to create dynamic and attractive web pages. This experience has helped me understand the importance of a solid structure and responsive design for an optimal user experience. I'm excited to share examples of my HTML work in my portfolio."
 
   }
   

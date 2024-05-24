@@ -23,10 +23,10 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
           <input
             type="text"
             placeholder="Buscar..."
-            className="p-2 lg border-none w-full bg-gray-200"
+            className="p-2 lg:border-none w-full bg-gray-200"
           />
         </div>
-        <button className="block sm:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="block sm:hidden" onClick={() => setMenuOpen(!menuOpen)}> {/* Botón de hamburguesa para móvil */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -43,19 +43,19 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
           </svg>
         </button>
       </div>
-      <div className={menuOpen ? "hidden" : "flex justify-end"}> {/* Oculta en versión móvil, muestra en versión de escritorio */}
+      <div className="hidden sm:flex justify-end"> {/* Menú para escritorio */}
         <div className="p-4">
-          <ul className="flex">
-            <li className="mr-8">
+          <ul className="flex space-x-8">
+            <li>
               <Link to="/" className="text-xl text-black hover:text-gray-700">{t('home')}</Link>
             </li>
-            <li className="mr-8">
+            <li>
               <Link to="/about" className="text-xl text-black hover:text-gray-700">{t('moreAboutMe')}</Link>
             </li>
-            <li className="mr-8">
+            <li>
               <Link to="/skills" className="text-xl text-black hover:text-gray-700">{t('Skills')}</Link>
             </li>
-            <li className="mr-8">
+            <li>
               <Link to="/projects" className="text-xl text-black hover:text-gray-700">{t('Projects')}</Link>
             </li>
             <li>
@@ -64,6 +64,27 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
           </ul>
         </div>
       </div>
+      {menuOpen && (
+        <div className="sm:hidden mt-2"> {/* Menú desplegable para móvil */}
+          <ul className="bg-gray-100 p-4">
+            <li className="mb-4">
+              <Link to="/" className="text-xl text-black hover:text-gray-700">{t('home')}</Link>
+            </li>
+            <li className="mb-4">
+              <Link to="/about" className="text-xl text-black hover:text-gray-700">{t('moreAboutMe')}</Link>
+            </li>
+            <li className="mb-4">
+              <Link to="/skills" className="text-xl text-black hover:text-gray-700">{t('Skills')}</Link>
+            </li>
+            <li className="mb-4">
+              <Link to="/projects" className="text-xl text-black hover:text-gray-700">{t('Projects')}</Link>
+            </li>
+            <li>
+              <a href="#footer" onClick={handleContactClick} className="text-xl text-black hover:text-gray-700">{t('contact')}</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

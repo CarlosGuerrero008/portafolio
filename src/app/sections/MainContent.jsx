@@ -40,8 +40,10 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
           </div>
           <div className="flex flex-col items-center">
             <button className="bg-gray-500 hover:bg-gray-500 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
-              {t('HTML')}
-              <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
+              <Link to="/skillstwo" className="flex items-center">
+                {t('HTML')}
+                <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
+              </Link>
             </button>
             <div className="mt-6 w-24 h-24 md:w-48 md:h-48 lg:w-96 lg:h-48 flex items-center justify-center bg-gray-800 rounded-full">
               <img src={bxlhtml} alt="HTML Icon" className="w-full h-full" />
@@ -49,8 +51,10 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
           </div>
           <div className="flex flex-col items-center">
             <button className="bg-gray-500 hover:bg-gray-500 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
-              {t('MYSQL')}
-              <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
+              <Link to="/skillstheer" className="flex items-center">
+                {t('MYSQL')}
+                <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
+              </Link>
             </button>
             <div className="mt-6 w-24 h-24 md:w-48 md:h-48 lg:w-96 lg:h-48 flex items-center justify-center bg-gray-800 rounded-full">
               <img src={bxlMysql} alt="Mysql Icon" className="w-full h-full" />
@@ -81,3 +85,4 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
 }
 
 export default CombinedContent;
+

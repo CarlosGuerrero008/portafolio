@@ -21,6 +21,8 @@ import emailIcon from '../assets/iconos/bxl-whatsapp.svg';
 import libros from '../assets/img/libros.jpg';
 import piano from '../assets/img/piano.jpg';
 import yo from '../assets/img/yo.jpg';
+import SkillstwoComponent from './sections/SkillstwoComponent';
+import SkillstheerComponent from './sections/SkillstheerComponent';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -53,6 +55,9 @@ function App() {
           <Route path="/about" element={<AboutComponent  t={t} piano={piano} libros={libros} yo={yo} />} />
           <Route path="/skills" element={<SkillsComponent t={t} bxlPython={bxlPython} />} />
           <Route path="/projects" element={<ProjectsComponent t={t} filetypeJava={filetypeJava} filetypePy={filetypePy} filetypeSql={filetypeSql} />} />
+          <Route path="/skillstwo" element={<SkillstwoComponent t={t} bxlPython={bxlPython} />} />
+          <Route path="/skillstheer" element={<SkillstheerComponent t={t} bxlPython={bxlPython} />} />
+          
         </Routes>
         <Footer t={t} phoneIcon={phoneIcon} emailIcon={emailIcon} />
       </div>

@@ -19,7 +19,7 @@
 
 .text {
   text-align: center;
-  font-size: 100x; /* Tamaño de texto ajustado para móviles */
+  font-size: 18px; /* Tamaño de texto ajustado para móviles */
 }
 
 .text-large {
@@ -35,8 +35,8 @@ h2 {
 .bookshelf-pic,
 .piano-pic,
 .profile-pic {
-  width: 400%;
-  max-width: 500px; /* Tamaño máximo de imágenes para móviles */
+  width: 100%;
+  max-width: 200px; /* Tamaño máximo de imágenes para móviles */
   height: auto;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -58,22 +58,14 @@ h2 {
   }
 
   h2 {
-    font-size: 36px; /* Tamaño de título ajustado para pantallas grandes */
+    font-size: 60px; /* Tamaño de título ajustado para pantallas grandes */
     margin-bottom: 50px;
   }
 
   .bookshelf-pic,
-  .piano-pic {
-    width: 800px;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-
+  .piano-pic,
   .profile-pic {
-    width: 650px;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    width: 40%; /* Ajusta el tamaño de las imágenes en pantallas grandes */
+    max-width: none; /* Permite que las imágenes crezcan más allá del tamaño máximo de móviles */
   }
 }

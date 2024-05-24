@@ -7,7 +7,7 @@ const AboutComponent = ({ t, piano, libros, yo }) => {
       <div className="section">
         <h2>Sobre mi</h2>
         <div className="section-content">
-          <div className="text text-large">
+          <div className="text ">
             <p>{t('Biografia')}</p>
           </div>
           <img src={yo} alt="Perfil" className="profile-pic" />

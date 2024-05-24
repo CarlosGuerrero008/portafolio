@@ -21,8 +21,8 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
             <button onClick={() => changeLanguage('es')} className="m-2 p-2 bg-gray-700 text-white">Español</button>
           </div>
         </div>
-        <div className="flex-1 ml-8"> {/* Ajusta el margen izquierdo para mover el texto a la izquierda */}
-          <h1 className="text-2xl font-bold">PORTAFOLIO</h1>
+        <div className="flex-1 text-center sm:text-left sm:ml-8"> {/* Ajusta el texto para móviles y pantallas grandes */}
+          <h1 className="text-2xl font-bold whitespace-nowrap">PORTAFOLIO</h1>
         </div>
         <button className="block sm:hidden" onClick={() => setMenuOpen(!menuOpen)}> {/* Botón de hamburguesa para móvil */}
           <svg

@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutComponent.css';
 
 const AboutComponent = ({ t, piano, libros, yo }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="about-container">
       <div className="section">
-        <h2>Sobre mi</h2>
+        <h2>{t("About me")}</h2>
         <div className="section-content">
-          <div className="text ">
+          <div className="text">
             <p>{t('Biografia')}</p>
           </div>
           <img src={yo} alt="Perfil" className="profile-pic" />
         </div>
         <div className="text">
           <p>
-            Tengo muchos gustos y pasatiempos, pero los más importantes, además de los que más me describen,
-            son para mí leer y tocar el piano.
+          {t("hobbies")}
           </p>
         </div>
       </div>
@@ -23,10 +26,9 @@ const AboutComponent = ({ t, piano, libros, yo }) => {
         <div className="section-content">
           <img src={libros} alt="Estante de libros" className="bookshelf-pic" />
           <div className="text">
-            <h2>Sobre Leer</h2>
+            <h2>{t("read")}</h2>
             <p>
-              Me gusta leer desde bien joven. Leo mucho sobre filosofía y ciencia ficción. Mis autores favoritos son
-              Albert Camus y Lovecraft. Además, mi libro favorito es "El hombre rebelde".
+            {t("About Read")}
             </p>
           </div>
         </div>
@@ -34,10 +36,9 @@ const AboutComponent = ({ t, piano, libros, yo }) => {
       <div className="section">
         <div className="section-content">
           <div className="text">
-            <h2>Sobre el piano</h2>
+            <h2> {t("piano")}</h2>
             <p>
-              Toco el piano, se me da bien, me han dado muchas clases durante mi vida, mi canción preferida para tocar es
-              "Chopin Nocturne Op. 9 No. 2".
+              {t("On the piano")}
             </p>
           </div>
           <img src={piano} alt="Piano" className="piano-pic" />

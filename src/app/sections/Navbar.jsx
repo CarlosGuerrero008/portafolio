@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const Navbar = ({ changeLanguage, t, scrollToFooter={scrollToFooter} }) => {
+const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleContactClick = (event) => {
     if (location.pathname === '/') {
@@ -25,7 +26,7 @@ const Navbar = ({ changeLanguage, t, scrollToFooter={scrollToFooter} }) => {
             className="p-2 lg border-none w-full bg-gray-200"
           />
         </div>
-        <button className="block sm:hidden">
+        <button className="block sm:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -42,7 +43,7 @@ const Navbar = ({ changeLanguage, t, scrollToFooter={scrollToFooter} }) => {
           </svg>
         </button>
       </div>
-      <div className="flex justify-end"> {/* Utilizando justify-end para alinear a la derecha */}
+      <div className={menuOpen ? "hidden" : "flex justify-end"}> {/* Oculta en versión móvil, muestra en versión de escritorio */}
         <div className="p-4">
           <ul className="flex">
             <li className="mr-8">

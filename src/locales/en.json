@@ -21,7 +21,14 @@
     "On the piano": "I play the piano, I'm good at it, I've had many lessons during my life, my favorite song to play is Chopin Nocturne Op. 9 No. 2.",
     "infoPython": "I have used Python in various projects, which has given me a solid familiarity with this language. This experience has been fundamental for my development, allowing me to create efficient and effective solutions in my projects. I would love to share more details about my work with Python in my portfolio.",
     "infoSQL": "I have worked extensively with MySQL on various projects, which has given me a deep understanding of relational databases. From schema design to complex queries, I have used MySQL to efficiently manage large data sets. I'm excited to share concrete examples of how I've implemented MySQL in my projects in my portfolio",
-    "infoHTML": "I have used HTML in several projects, which has allowed me to create dynamic and attractive web pages. This experience has helped me understand the importance of a solid structure and responsive design for an optimal user experience. I'm excited to share examples of my HTML work in my portfolio."
+    "infoHTML": "I have used HTML in several projects, which has allowed me to create dynamic and attractive web pages. This experience has helped me understand the importance of a solid structure and responsive design for an optimal user experience. I'm excited to share examples of my HTML work in my portfolio.",
+    "day": "Schedule add a day",
+    "infoday": "In this project I have a code made in C# that adds a day to the calendar taking into account leap years and the month of February.",
+    "go": "Go to project",
+    "machine": "Virtual machine project",
+    "infomachine" : "In this project I have created a machine with Docker Compose, which allows me to orchestrate and manage several containers.",
+    "Calculator" : "Calculator program",
+    "infoCalculator" : "In this project I have a code made in Python for a calculator that adds, subtracts, multiplies, divides, it is very basic."
 
   }
   

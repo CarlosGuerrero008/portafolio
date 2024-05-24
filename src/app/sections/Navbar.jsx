@@ -20,11 +20,9 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
             <button onClick={() => changeLanguage('en')} className="m-2 p-2 bg-gray-700 text-white">English</button>
             <button onClick={() => changeLanguage('es')} className="m-2 p-2 bg-gray-700 text-white">Español</button>
           </div>
-          <input
-            type="text"
-            placeholder="Buscar..."
-            className="p-2 lg:border-none w-full bg-gray-200"
-          />
+        </div>
+        <div className="flex-1 ml-8"> {/* Ajusta el margen izquierdo para mover el texto a la izquierda */}
+          <h1 className="text-2xl font-bold">PORTAFOLIO</h1>
         </div>
         <button className="block sm:hidden" onClick={() => setMenuOpen(!menuOpen)}> {/* Botón de hamburguesa para móvil */}
           <svg

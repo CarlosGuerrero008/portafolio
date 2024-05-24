@@ -21,12 +21,10 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
             </div>
           </div>
           <div className="text text-large">
-            <h3>Programa agregar un día</h3>
-            <p>
-              En este proyecto tengo un código hecho en C# que añade un día al calendario teniendo en cuenta años bisiestos y el mes de febrero.
-            </p>
+            <h3>{t("day")}</h3>
+            <p>{t("infoday")}</p>
             <div className="text">
-              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">{t("go")}</a>
             </div>
           </div>
         </div>
@@ -46,12 +44,10 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
             </div>
           </div>
           <div className="text text-large">
-            <h3>Proyecto máquina virtual</h3>
-            <p>
-              En este proyecto tengo creada una máquina con Docker Compose, que permite orquestar y gestionar varios contenedores.
-            </p>
+            <h3>{t("machine")}</h3>
+            <p>{t("infomachine")}</p>
             <div className="text">
-              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">{t("go")}</a>
             </div>
           </div>
         </div>
@@ -71,12 +67,10 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
             </div>
           </div>
           <div className="text text-large">
-            <h3>Programa calculadora</h3>
-            <p>
-              En este proyecto tengo un código hecho en Python sobre una calculadora que suma, resta, multiplica, divide, es muy básico.
-            </p>
+            <h3>{t("Calculator")}</h3>
+            <p>{t("infoCalculator")}</p>
             <div className="text">
-              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">{t("go")}</a>
             </div>
           </div>
         </div>

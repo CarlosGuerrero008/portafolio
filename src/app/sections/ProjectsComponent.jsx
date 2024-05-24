@@ -1,7 +1,11 @@
-import React from 'react';
-import './ProjectsComponent.css'; // Asegúrate de tener un archivo CSS para el estilo de ProjectsComponent
+import React, { useEffect } from 'react';
+import './ProjectsComponent.css';
 
-const ProjectsComponent = ({t={t}, filetypeJava={filetypeJava}, filetypePy={filetypePy}, filetypeSql={filetypeSql}}) => {
+const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="projects-container">
       {/* Sección 1 */}
@@ -21,11 +25,10 @@ const ProjectsComponent = ({t={t}, filetypeJava={filetypeJava}, filetypePy={file
             <p>
               En este proyecto tengo un código hecho en C# que añade un día al calendario teniendo en cuenta años bisiestos y el mes de febrero.
             </p>
-          <div className="text ">
-            <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+            <div className="text">
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+            </div>
           </div>
-          </div>
-          
         </div>
       </div>
 
@@ -47,9 +50,9 @@ const ProjectsComponent = ({t={t}, filetypeJava={filetypeJava}, filetypePy={file
             <p>
               En este proyecto tengo creada una máquina con Docker Compose, que permite orquestar y gestionar varios contenedores.
             </p>
-            <div className="text ">
-            <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
-          </div>
+            <div className="text">
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+            </div>
           </div>
         </div>
       </div>
@@ -72,9 +75,9 @@ const ProjectsComponent = ({t={t}, filetypeJava={filetypeJava}, filetypePy={file
             <p>
               En este proyecto tengo un código hecho en Python sobre una calculadora que suma, resta, multiplica, divide, es muy básico.
             </p>
-            <div className="text ">
-            <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
-          </div>
+            <div className="text">
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">Ir al proyecto</a>
+            </div>
           </div>
         </div>
       </div>

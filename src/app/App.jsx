@@ -51,7 +51,7 @@ function App() {
           filetypeSql={filetypeSql}/>} />
           {/* Asegúrate de definir los componentes AboutComponent, SkillsComponent, ProjectsComponent y ContactComponent */}
           <Route path="/about" element={<AboutComponent  t={t} piano={piano} libros={libros} yo={yo} />} />
-          <Route path="/skills" element={<SkillsComponent />} />
+          <Route path="/skills" element={<SkillsComponent t={t} bxlPython={bxlPython} />} />
           <Route path="/projects" element={<ProjectsComponent t={t} filetypeJava={filetypeJava} filetypePy={filetypePy} filetypeSql={filetypeSql} />} />
         </Routes>
         <Footer t={t} phoneIcon={phoneIcon} emailIcon={emailIcon} />

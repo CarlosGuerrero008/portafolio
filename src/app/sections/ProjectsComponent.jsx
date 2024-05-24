@@ -9,7 +9,7 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
   return (
     <div className="projects-container">
       {/* Sección 1 */}
-      <div className="section">
+      <div className="section ">
         <h2>Mis Proyectos</h2>
         <div className="section-content">
           <div className="project">

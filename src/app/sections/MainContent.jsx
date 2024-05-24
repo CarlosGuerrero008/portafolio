@@ -11,7 +11,7 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
               <span className="text-5xl md:text-8xl">{t('hello')}</span> {t('welcomeMessage').slice(7)}
             </h1>
             <div className="flex justify-center md:justify-end mt-8">
-              <button className="bg-gray-500 hover:bg-gray-500 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-12 rounded-lg flex items-center">
+              <button className="bg-gray-500 hover:bg-gray-600 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-12 rounded-lg flex items-center">
                 <Link to="/about" className="flex items-center">
                   <span>{t('moreAboutMe')}</span>
                   <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
@@ -28,7 +28,7 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
       <div className="py-8 md:py-8 bg-gray-900 flex-1">
         <div className="flex flex-col md:flex-row justify-between items-center md:justify-between md:items-start space-y-5 md:space-y-0 md:space-x-5">
           <div className="flex flex-col items-center">
-            <button className="bg-gray-500 hover:bg-gray-500 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
+            <button className="bg-gray-500 hover:bg-gray-600 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
               <Link to="/skills" className="flex items-center">
                 {t('Python')}
                 <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
@@ -39,7 +39,7 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <button className="bg-gray-500 hover:bg-gray-500 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
+            <button className="bg-gray-500 hover:bg-gray-600 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
               <Link to="/skillstwo" className="flex items-center">
                 {t('HTML')}
                 <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
@@ -50,7 +50,7 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <button className="bg-gray-500 hover:bg-gray-500 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
+            <button className="bg-gray-500 hover:bg-gray-600 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-16 rounded-lg flex items-center">
               <Link to="/skillstheer" className="flex items-center">
                 {t('MYSQL')}
                 <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
@@ -74,7 +74,7 @@ const CombinedContent = ({ t, profileImage, ArrowRight, bxlPython, bxlhtml, bxlM
         </div>
 
         <div className="flex justify-center mt-8 md:mt-16">
-          <Link to="/projects" className="bg-gray-500 hover:bg-gray-500 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-32 rounded-lg flex items-center">
+          <Link to="/projects" className="bg-gray-500 hover:bg-gray-600 text-black text-xl md:text-3xl font-bold py-4 px-6 md:py-8 md:px-32 rounded-lg flex items-center">
             {t('project')}
             <img src={ArrowRight} alt="Angle Right Icon" className="ml-2 w-6 h-6 md:w-12 md:h-12" />
           </Link>

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
+const Navbar = ({ changeLanguage, scrollToFooter }) => {
+  const { t } = useTranslation();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -10,6 +12,11 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
       event.preventDefault();
       scrollToFooter();
     }
+    setMenuOpen(false); // Cerrar el menú después de hacer clic en el enlace
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Cerrar el menú después de hacer clic en cualquier enlace
   };
 
   return (
@@ -21,10 +28,10 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
             <button onClick={() => changeLanguage('es')} className="m-2 p-2 bg-gray-700 text-white">Español</button>
           </div>
         </div>
-        <div className="flex-1 text-center sm:text-left sm:ml-8"> {/* Ajusta el texto para móviles y pantallas grandes */}
+        <div className="flex-1 text-center sm:text-left sm:ml-8">
           <h1 className="text-2xl font-bold whitespace-nowrap">PORTAFOLIO</h1>
         </div>
-        <button className="block sm:hidden" onClick={() => setMenuOpen(!menuOpen)}> {/* Botón de hamburguesa para móvil */}
+        <button className="block sm:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -41,7 +48,7 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
           </svg>
         </button>
       </div>
-      <div className="hidden sm:flex justify-end"> {/* Menú para escritorio */}
+      <div className="hidden sm:flex justify-end">
         <div className="p-4">
           <ul className="flex space-x-8">
             <li>
@@ -63,19 +70,19 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
         </div>
       </div>
       {menuOpen && (
-        <div className="sm:hidden mt-2"> {/* Menú desplegable para móvil */}
+        <div className="sm:hidden mt-2">
           <ul className="bg-gray-100 p-4">
             <li className="mb-4">
-              <Link to="/" className="text-xl text-black hover:text-gray-700">{t('home')}</Link>
+              <Link to="/" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('home')}</Link>
             </li>
             <li className="mb-4">
-              <Link to="/about" className="text-xl text-black hover:text-gray-700">{t('moreAboutMe')}</Link>
+              <Link to="/about" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('moreAboutMe')}</Link>
             </li>
             <li className="mb-4">
-              <Link to="/skills" className="text-xl text-black hover:text-gray-700">{t('Skills')}</Link>
+              <Link to="/skills" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('Skills')}</Link>
             </li>
             <li className="mb-4">
-              <Link to="/projects" className="text-xl text-black hover:text-gray-700">{t('Projects')}</Link>
+              <Link to="/projects" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('Projects')}</Link>
             </li>
             <li>
               <a href="#footer" onClick={handleContactClick} className="text-xl text-black hover:text-gray-700">{t('contact')}</a>
@@ -85,6 +92,6 @@ const Navbar = ({ changeLanguage, t, scrollToFooter }) => {
       )}
     </nav>
   );
-}
+};
 
 export default Navbar;

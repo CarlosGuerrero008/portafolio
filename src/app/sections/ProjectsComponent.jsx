@@ -24,7 +24,7 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
             <h3>{t("day")}</h3>
             <p>{t("infoday")}</p>
             <div className="text">
-              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">{t("go")}</a>
+               <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git" target="_blank">{t("go")}</a>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
             <h3>{t("machine")}</h3>
             <p>{t("infomachine")}</p>
             <div className="text">
-              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">{t("go")}</a>
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git" target="_blank">{t("go")}</a>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
             <h3>{t("Calculator")}</h3>
             <p>{t("infoCalculator")}</p>
             <div className="text">
-              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git">{t("go")}</a>
+              <a href="https://github.com/CarlosGuerrero008/Programa-agregar-un-dia.-capitulo-4.git" target="_blank">{t("go")}</a>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createRoot } from 'react-dom'; // Importa createRoot de react-dom
+import { createRoot } from 'react-dom'; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import profileImage from '../assets/img/profileImage.jpg';
@@ -32,13 +32,13 @@ function App() {
   };
 
   const scrollToFooter = () => {
-    // Suponiendo que tienes un elemento con id "footer"
+    
     document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
   };
 
   
 
-  const root = createRoot(document.getElementById('root')); // Crea el punto de entrada raíz con createRoot
+  const root = createRoot(document.getElementById('root')); 
 
   root.render(
     <Router>
@@ -51,7 +51,7 @@ function App() {
           filetypeJava={filetypeJava}
           filetypePy={filetypePy}
           filetypeSql={filetypeSql}/>} />
-          {/* Asegúrate de definir los componentes AboutComponent, SkillsComponent, ProjectsComponent y ContactComponent */}
+          
           <Route path="/about" element={<AboutComponent  t={t} piano={piano} libros={libros} yo={yo} />} />
           <Route path="/skills" element={<SkillsComponent t={t} bxlPython={bxlPython} />} />
           <Route path="/projects" element={<ProjectsComponent t={t} filetypeJava={filetypeJava} filetypePy={filetypePy} filetypeSql={filetypeSql} />} />

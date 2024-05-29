@@ -12,11 +12,11 @@ const Navbar = ({ changeLanguage, scrollToFooter }) => {
       event.preventDefault();
       scrollToFooter();
     }
-    setMenuOpen(false); // Cerrar el menú después de hacer clic en el enlace
+    setMenuOpen(false); 
   };
 
   const handleLinkClick = () => {
-    setMenuOpen(false); // Cerrar el menú después de hacer clic en cualquier enlace
+    setMenuOpen(false); 
   };
 
   return (
@@ -70,18 +70,18 @@ const Navbar = ({ changeLanguage, scrollToFooter }) => {
         </div>
       </div>
       {menuOpen && (
-        <div className="sm:hidden mt-2">
-          <ul className="bg-gray-100 p-4">
-            <li className="mb-4">
+        <div className="sm:hidden mt-2 bg-gray-100"> 
+          <ul className="p-4 space-y-4">
+            <li>
               <Link to="/" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('home')}</Link>
             </li>
-            <li className="mb-4">
+            <li>
               <Link to="/about" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('moreAboutMe')}</Link>
             </li>
-            <li className="mb-4">
+            <li>
               <Link to="/skills" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('Skills')}</Link>
             </li>
-            <li className="mb-4">
+            <li>
               <Link to="/projects" onClick={handleLinkClick} className="text-xl text-black hover:text-gray-700">{t('Projects')}</Link>
             </li>
             <li>

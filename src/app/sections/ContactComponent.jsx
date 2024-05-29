@@ -9,4 +9,4 @@ const ContactComponent = () => {
   );
 }
 
-export default ContactComponent; // Aquí exporta el componente por defecto
+export default ContactComponent; 

@@ -8,15 +8,15 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
 
   return (
     <div className="projects-container">
-      {/* Sección 1 */}
+      
       <div className="section ">
         <h2>Mis Proyectos</h2>
         <div className="section-content">
           <div className="project">
             <div className="project-details">
-              <img src={filetypeSql} alt="Project 1" className="project-image" />
+              <img src={filetypePy} alt="Project 1" className="project-image" />
               <div className="project-text">
-                {/* Aquí puedes agregar detalles adicionales del proyecto */}
+                
               </div>
             </div>
           </div>
@@ -30,16 +30,16 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
         </div>
       </div>
 
-      <hr /> {/* Línea de separación */}
+      <hr /> 
 
-      {/* Sección 2 */}
+     
       <div className="section">
         <div className="section-content">
           <div className="project">
             <div className="project-details">
               <img src={filetypePy} alt="Project 2" className="project-image" />
               <div className="project-text">
-                {/* Aquí puedes agregar detalles adicionales del proyecto */}
+                
               </div>
             </div>
           </div>
@@ -53,16 +53,16 @@ const ProjectsComponent = ({ t, filetypeJava, filetypePy, filetypeSql }) => {
         </div>
       </div>
 
-      <hr /> {/* Línea de separación */}
+      <hr /> 
 
-      {/* Sección 3 */}
+      
       <div className="section">
         <div className="section-content">
           <div className="project">
             <div className="project-details">
-              <img src={filetypeJava} alt="Project 3" className="project-image" />
+              <img src={filetypePy} alt="Project 3" className="project-image" />
               <div className="project-text">
-                {/* Aquí puedes agregar detalles adicionales del proyecto */}
+                
               </div>
             </div>
           </div>

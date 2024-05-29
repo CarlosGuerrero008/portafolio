@@ -1,9 +1,9 @@
-/* src/index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Font-face declarations */
+
 @font-face {
   font-family: 'Inter';
   src: url('/assets/fonts/Inter-Thin.ttf');

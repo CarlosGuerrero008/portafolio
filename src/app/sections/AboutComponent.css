@@ -7,19 +7,19 @@
 
 .section {
   margin-bottom: 20px;
-  text-align: center; /* Centra el contenido horizontalmente */
+  text-align: center; 
 }
 
 .section-content {
   display: flex;
-  flex-direction: column; /* Cambiado a columna por defecto */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
 }
 
 .text {
   text-align: center;
-  font-size: 18px; /* Tamaño de texto ajustado para móviles */
+  font-size: 18px; 
 }
 
 .text-large {
@@ -28,7 +28,7 @@
 }
 
 h2 {
-  font-size: 24px; /* Tamaño de título ajustado para móviles */
+  font-size: 24px; 
   margin-bottom: 20px;
 }
 
@@ -36,7 +36,7 @@ h2 {
 .piano-pic,
 .profile-pic {
   width: 100%;
-  max-width: 200px; /* Tamaño máximo de imágenes para móviles */
+  max-width: 200px; 
   height: auto;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -44,29 +44,29 @@ h2 {
 
 @media (min-width: 768px) {
   .section-content {
-    flex-direction: row-reverse; /* Cambiado de row a row-reverse para pantallas grandes */
+    flex-direction: row-reverse; 
     align-items: center;
     justify-content: space-between;
   }
 
   .text {
-    font-size: 50px; /* Tamaño de texto ajustado para pantallas grandes */
+    font-size: 50px; 
   }
 
   .text-large {
-    font-size: 50px; /* Tamaño de texto grande ajustado para pantallas grandes */
+    font-size: 50px; 
   }
 
   h2 {
-    font-size: 60px; /* Tamaño de título ajustado para pantallas grandes */
+    font-size: 60px; 
     margin-bottom: 50px;
   }
 
   .bookshelf-pic,
   .piano-pic,
   .profile-pic {
-    width: 40%; /* Ajusta el tamaño de las imágenes en pantallas grandes */
-    max-width: none; /* Permite que las imágenes crezcan más allá del tamaño máximo de móviles */
+    width: 40%; 
+    max-width: none; 
   }
 
 
